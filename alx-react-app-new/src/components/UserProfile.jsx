@@ -1,30 +1,28 @@
 import React from 'react';
 
-function UserProfile(props) {
+const UserProfile = (props) => {
   const containerStyle = {
     border: '1px solid #ccc',
     padding: '12px',
     margin: '12px',
-    borderRadius: '8px',
+    borderRadius: '6px',
     maxWidth: '320px',
-    backgroundColor: '#f9f9ff',
+    backgroundColor: '#f9f9f9',
   };
 
   const nameStyle = {
-    color: '#1a73e8',
-    fontSize: '20px',
+    color: '#1e90ff',
     margin: '0 0 8px 0',
   };
 
   const ageStyle = {
-    fontWeight: 700,
+    fontWeight: 'bold',
     color: '#333',
   };
 
   const bioStyle = {
-    color: '#444',
-    lineHeight: 1.4,
-    marginTop: '8px',
+    color: '#555',
+    lineHeight: '1.4',
   };
 
   return (
@@ -36,6 +34,6 @@ function UserProfile(props) {
       <p style={bioStyle}>Bio: {props.bio}</p>
     </div>
   );
-}
+};
 
 export default UserProfile;
